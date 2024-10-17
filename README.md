@@ -8,3 +8,9 @@ These datasets are designed to conform to naming standards and can be loaded int
 - PostgreSQL
 - SQLite
 - SQL Server
+
+
+## Directories
+
+- schema - Individual schemas and data source implementations
+- docker - Standalone docker containers for datasets
