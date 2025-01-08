@@ -17,6 +17,8 @@ fi
 
 # Update
 
-docker build --platform linux/amd64 -t ${USERNAME}/${REPOSITORY}:${TAG} .
-#docker buildx build --platform linux/amd64,linux/arm64 -t ${USERNAME}/${REPOSITORY}:${TAG} $* .
+gunzip *.sql.gz
+#docker build --platform linux/amd64 -t ${USERNAME}/${REPOSITORY}:${TAG} .
+docker buildx build --platform linux/amd64,linux/arm64 -t ${USERNAME}/${REPOSITORY}:${TAG} $* .
 
+gzip *.sql

@@ -1,8 +1,8 @@
 # Use the official MySQL image
-FROM mysql:8.0
+FROM container-registry.oracle.com/mysql/community-server:8.0
 
 LABEL maintainer="ronald.bradford@kanangra.io"
-LABEL version="0.4"
+LABEL version="0.5.80"
 LABEL description="MySQL 8.0 Example Data Sets"
 
 # Set environment variables
